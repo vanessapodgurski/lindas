@@ -1,74 +1,24 @@
-.cabecalho {
-    background-color: var(--cor-cabecalho);
-    padding: 1em;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-}
-
-.container__imagem, .container__frase {
-    padding: 1em;
-}
-
-.container__titulo, .container__frase {
-    display: none;
-}
-
-@media screen and (min-width: 820px) {
-    .container__titulo, .container__titulo--negrito {
-        font-size: 30px;
-    }
-
-    .container__titulo {
-        font-weight: 400;
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container__frase {
-        padding-left: 5em;
-        font-size: 20px;
-        display: block;
-    }
-}
-.cabecalho {
-    background-color: var(--cor-cabecalho); /* Certifique-se de que a variável está correta */
-    padding: 1em;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column; /* Adicione esta linha para empilhar o conteúdo verticalmente */
-}
-
-.container__imagem {
-    padding: 1em;
-}
-
-.container__titulo, .container__frase {
-    display: none;
-}
-
-@media screen and (min-width: 820px) {
-    .container__titulo, .container__titulo--negrito {
-        font-size: 30px;
-    }
-
-    .container__titulo {
-        font-weight: 400;
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container__frase {
-        padding: 0; /* Remove o padding para alinhamento à esquerda */
-        font-size: 20px;
-        display: block;
-        text-align: left; /* Alinha o texto à esquerda */
-    }
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biblioteca Start</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="container__imagem">
+                <!-- SVG do logotipo aqui -->
+            </div>
+            <h1 class="container__titulo">
+                Biblioteca<b class="container__titulo--negrito">Start</b>
+            </h1>
+            <p class="container__frase">
+                "Aqui, cada livro é um <i>start</i> para um novo conhecimento!"
+            </p>
+        </div>
+    </header>
+</body>
+</html>
