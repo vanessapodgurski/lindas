@@ -1,12 +1,39 @@
-@import url('styles/header.css'); /* Assegure-se de que o caminho está correto */
-
+/* Definições de cores e fontes podem ser ajustadas conforme necessário */
 :root {
-    --cor-de-fundo: #9949B4;
-    --cor-cabecalho: #FFFFFF;
+    --cor-cabecalho: #f0f0f0; /* Exemplo de cor para o cabeçalho */
 }
 
-body {
-    background-color: var(--cor-de-fundo);
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__texto {
+    flex: 1;
+    text-align: left;
+}
+
+.container__titulo {
+    font-size: 30px;
     margin: 0;
+}
+
+.container__titulo--negrito {
+    font-weight: bold;
+}
+
+.container__frase {
+    font-size: 20px;
+    margin: 0;
+}
+
+.container__imagem {
+    flex-shrink: 0;
 }
 
