@@ -1,39 +1,46 @@
-/* Definições de cores e fontes podem ser ajustadas conforme necessário */
-:root {
-    --cor-cabecalho: #f0f0f0; /* Exemplo de cor para o cabeçalho */
+@import url(styles/header.css);
+
+:root{
+    --cor-de-fundo:   #9949B4;
+    --cor-cabecalho:   #FFFFFF;
 }
 
-.cabecalho {
+body{
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+}
+.cabecalho{
     background-color: var(--cor-cabecalho);
     padding: 1em;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.container__texto {
-    flex: 1;
-    text-align: left;
+.container__imagem, .container__frase {
+    padding: 1em;
 }
 
-.container__titulo {
-    font-size: 30px;
-    margin: 0;
+.container__titulo, .container__frase{
+    display: none;
 }
+@media screen and (min-width: 820px) {
+    .container__titulo, .container__titulo--negrito {
+        font-size: 30px;
+    }
 
-.container__titulo--negrito {
-    font-weight: bold;
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
 }
-
-.container__frase {
-    font-size: 20px;
-    margin: 0;
-}
-
-.container__imagem {
-    flex-shrink: 0;
+@media screen and (min-width: 1024px) {
+    .container__frase{
+        padding-left: 5em;
+        font-size: 20px;
+        display: block;
+    }
 }
 
