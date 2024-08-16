@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalho {
     background-color: var(--cor-cabecalho);
     padding: 1em;
 }
@@ -12,9 +12,10 @@
     padding: 1em;
 }
 
-.container__titulo, .container__frase{
+.container__titulo, .container__frase {
     display: none;
 }
+
 @media screen and (min-width: 820px) {
     .container__titulo, .container__titulo--negrito {
         font-size: 30px;
@@ -25,11 +26,9 @@
         display: block;
     }
 }
-@media and ( min-width: 820px) { /* ...propriedades css... */
 
-    
-}@media screen and (min-width: 1024px) {
-    .container__frase{
+@media screen and (min-width: 1024px) {
+    .container__frase {
         padding-left: 5em;
         font-size: 20px;
         display: block;
