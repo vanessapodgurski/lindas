@@ -34,3 +34,41 @@
         display: block;
     }
 }
+.cabecalho {
+    background-color: var(--cor-cabecalho); /* Certifique-se de que a variável está correta */
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Adicione esta linha para empilhar o conteúdo verticalmente */
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.container__titulo, .container__frase {
+    display: none;
+}
+
+@media screen and (min-width: 820px) {
+    .container__titulo, .container__titulo--negrito {
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container__frase {
+        padding: 0; /* Remove o padding para alinhamento à esquerda */
+        font-size: 20px;
+        display: block;
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+}
